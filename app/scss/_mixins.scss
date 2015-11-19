@@ -1,0 +1,18 @@
+// Scss
+@charset "UTF-8";
+
+/* ----- Colors ----- */
+/*
+$light_green_color: #03899C;
+$dark_green_color: #02515C;
+$dark_grey_color: #111111;
+$ribbon_color: #ff0000;
+*/
+
+
+/* --- Set color of mixin, to set color of bar on mobile ---- */
+@mixin font-mix($my-font-color,$my-bg-color){
+    color:$my-font-color;
+    background-color: $my-bg-color;
+    
+}
