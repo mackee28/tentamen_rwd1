@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Set Device Proporties -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <!-- Head HTML Proporties -->
+    <meta name="description" content="Bygg &amp; Vent i Syd AB Hemsida">
+    <meta name="keywords" content="bygg, ventilation, vent, syd, åhus, kristianstad, skåne">
+    <meta name="author" content="Bygg &amp; Vent i Syd AB">
+
+    <title>Bygg &amp; Vent i Syd AB</title>
+
+    <!-- Reset -->
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    
+    <!-- Google fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+</head>
+
+<!-- BODY -->
+
+<body>
+    <nav role="navigation" id="nav">
+        <input class="trigger" type="checkbox" id="mainNavButton">
+        <label for="mainNavButton" onclick id="mobilemenu">
+            <p id="logotext">Bygg &amp; Vent i Syd AB</p>
+            <i class="fa fa-bars" id="hamburgericon"></i>
+            <i class="fa fa-times"></i>
+        </label>
+        <h1 id="logotextdesk">Bygg &amp; Vent i Syd AB</h1>
+        <!--<span id="preorlogin">Logga in</span>-->
+        <span id="preorlogin" onmouseover="this.style.cursor='pointer'" onmouseout="this.style.cursor='default'" onclick='return tell();'>Logga in</span>
+
+        <div class="off-canvas-menu">
+            <ul>
+                <li><a href="#home" id="homelink">Hem</a></li>
+                <input class="trigger2" type="checkbox" id="sub-check">
+                <li>
+                    <label for="sub-check" onclick id="mobilemenu">
+                        <i class="fa fa-plus" id="plus"></i>
+                        <i class="fa fa-minus" id="minus"></i>
+                        <span>Produkter</span>
+                    </label>
+                    <li>
+                        <ul id="submenu-products2">
+                            <li><a href="#products">Proteinpulver</a>
+                                <ul id="submenu-protein">
+                                    <li><a href="#plus">- Protein Plus NY!</a></li>
+                                    <li><a href="#basic">- Protein Basic</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+
+                    </li>
+                </li>
+                <li id="original-products"><a href="#products"><i class="fa fa-plus"></i>Produkter</a>
+
+                    <ul id="submenu-products">
+                        <li><a href="#products"><i class="fa fa-plus"></i>Proteinpulver</a>
+                            <ul id="submenu-protein">
+                                <li><a href="#plus">- Protein Plus NY!</a></li>
+                                <li><a href="#basic">- Protein Basic</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#about">Om oss</a></li>
+                <li><a href="#contact">Kontakta oss</a></li>
+            </ul>
+            <span id="preorlogin-mobile" onmouseover="this.style.cursor='pointer'" onmouseout="this.style.cursor='default'" onclick='return tell();'>Logga in</span>
+        </div>
+        <!-- Menu -->
+        <ul>
+            <li><a href="#home" id="homelink">Hem</a></li>
+            <input class="trigger2" type="checkbox" id="sub-check">
+            <li>
+                <label for="sub-check" onclick id="mobilemenu">
+                    <i class="fa fa-plus" id="plus"></i>
+                    <i class="fa fa-minus" id="minus"></i>
+                    <span>Produkter</span>
+                </label>
+                <li>
+                    <ul id="submenu-products2">
+                        <li><a href="#products">Proteinpulver</a>
+                            <ul id="submenu-protein">
+                                <li><a href="#plus">- Protein Plus NY!</a></li>
+                                <li><a href="#basic">- Protein Basic</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                </li>
+            </li>
+            <li id="original-products"><a href="#products"><i class="fa fa-plus"></i>Produkter</a>
+
+                <ul id="submenu-products">
+                    <li><a href="#products"><i class="fa fa-plus"></i>Proteinpulver</a>
+                        <ul id="submenu-protein">
+                            <li><a href="#plus">- Protein Plus NY!</a></li>
+                            <li><a href="#basic">- Protein Basic</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#about">Om oss</a></li>
+            <li><a href="#contact">Kontakta oss</a></li>
+        </ul>
+
+    </nav>
+
+
+
+    <section class="container" id="home">
+        <!-- Content to display under nav -->
+        <article class="latest">
+            <h2>- Protein Plus -</h2>
+            <a href="#products">
+                <input type=button value='Läs mer' id="orderbutton">
+            </a>
+            <p>Efterlängtade Protein Plus finns nu i lager. Ett kosttillskott av högsta kvalité!</p>
+
+        </article>
+
+        <!-- Products  -->
+        <section class="products" id="products">
+            <a name="products"></a>
+            <div id="test">
+                <h1>Produkter</h1></div>
+
+
+            <article id="plus">
+
+                <div class="circle-holder">
+                    <div class="premium-circle"><span id="premium-banner-text">Premium</span></div>
+
+                </div>
+                <h2>Protein Plus</h2>
+
+
+                <figure>
+                    <img src="images/Products/plus.png" alt="Protein Plus">
+                </figure>
+                <p>Ett kvalitativt proteinpulver med hela 30% protein. Helt utan socker. Finns i smakerna choklad, karamell och jordgubb!</p>
+                <input type=button onClick="alert('Tack för din order')" value='Beställ' id="productorderbutton">
+            </article>
+
+            <article id="basic">
+
+                <h2>Basic</h2>
+                <figure>
+                    <img src="images/Products/basic.jpg" alt="Protein Basic">
+                </figure>
+                <p>Kosttillskottet för dig som vill komma igång med din träning. Proteinrik och endast 3% socker. Finns i smakerna banan och vanilj. Gratisprov ingår!</p>
+                <input type=button onClick="alert('Tack för din order')" value='Beställ' id="productorderbutton">
+            </article>
+
+        </section>
+
+
+        <article class="about" id="about">
+            <h1>Om oss</h1>
+            <section>
+                <p>Proteinhuset är Sveriges största leverantör inom träning och kosttillskott. Vi har alltid bra produkter till rätt pris och skickar dina varor samma dag!</p>
+            </section>
+        </article>
+
+        <!-- Contact information -->
+        <article class="contact" id="contact">
+            <h1 id="contactheading">Kontakt</h1>
+            <section>
+                <!-- I will create phone and mail links -->
+                <p>010 - 20 30 40 | info@proteinhuset.se</p>
+                <p>Malmvägen 23, 256 89 Kostis</p>
+                <p>&copy;2015 Proteinbutiken AB </p>
+                <p id="follow">— Följ oss —</p>
+            </section>
+        </article>
+        <!--
+        <article>
+            <h2>Vill du få en gratis rabattkod?</h2>
+            <figure>
+                <img src="images/fitness-splash.jpg" alt="Article image">
+                <figcaption>Protein PLUS</figcaption>
+            </figure>
+            <p>Äntligen så har vi fått in den eftertrakted produkten Protein PLUS.</p>
+        </article>
+-->
+        <!-- Back to top
+   <a href="#home">Go to top</a> -->
+    </section>
+
+    <footer>
+        <a href="https://sv-se.facebook.com/" target="_blank"><i class="fa fa-facebook" id="social"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a>
+        <a href="https://se.pinterest.com/" target="_blank"><i class="fa fa-pinterest-p"></i></a>
+    </footer>
+
+</body>
+<script type="text/javascript" src="js/hello_world.js"></script>
+<!-- BUGS 
+* When displaying the menu on mobile/tablet and transforming the window, so that the desktop version triggers, the submenu will be displayd as a row insted of a column. Relod page to fix!
+-->
+
+</html>
