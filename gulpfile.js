@@ -10,13 +10,10 @@ var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require('browser-sync');
 // Require merge-stream to output multilple tasks to multiple destinations
 var merge = require('merge-stream');
-<<<<<<< HEAD
+
 // Require gulp-jade
 var jade = require('gulp-jade');
-=======
-// Use jade for file-structure on html-code
-var jade        = require('gulp-jade');
->>>>>>> 300e7369bdd95285d224277f9dbd7d3f740240af
+
 
 // Start browserSync server
 gulp.task('browserSync', function () {
@@ -41,7 +38,6 @@ gulp.task('jade', function () {
 // JADE Compiler
 gulp.task('jade', function() {
   gulp.src('app/jade/*.jade')
-    .pipe(plumber())
     .pipe(jade({
       pretty: true
       }))
@@ -60,13 +56,12 @@ gulp.task('sass', function () {
         .pipe(browserSync.reload({
             stream: true
         }));
-=======
+});
 // WATCH 'gulp'
 gulp.task('watch', ['browserSync', 'sass'], function() {
   gulp.watch('app/scss/**/*.+(scss|sass)', ['sass']);
   gulp.watch('app/jade/**', ['jade']);
   gulp.watch('app/index.html', browserSync.reload);
->>>>>>> 300e7369bdd95285d224277f9dbd7d3f740240af
 });
 
 

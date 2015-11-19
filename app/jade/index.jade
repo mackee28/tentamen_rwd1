@@ -1,2 +1,176 @@
 doctype html
-html(lang="sv")
+html(lang='sv')
+  head
+    meta(charset='UTF-8')
+    // Set Device Proporties
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0')
+    // Head HTML Proporties
+    meta(name='description', content='Bygg & Vent i Syd AB Hemsida')
+    meta(name='keywords', content='bygg, ventilation, vent, syd, åhus, kristianstad, skåne')
+    meta(name='author', content='Bygg & Vent i Syd AB')
+    title Bygg & Vent i Syd AB
+    // Reset
+    link(rel='stylesheet', href='css/reset.css')
+    // Style
+    link(rel='stylesheet', href='css/styles.css')
+    // Font Awsome
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
+    // Google fonts
+    link(href='https://fonts.googleapis.com/css?family=Lobster', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans', rel='stylesheet', type='text/css')
+  // BODY
+  body
+    nav#nav(role='navigation')
+      input#mainNavButton.trigger(type='checkbox')
+      label#mobilemenu(for='mainNavButton', onclick='')
+        p#logotext Bygg & Vent i Syd AB
+        i#hamburgericon.fa.fa-bars
+        i.fa.fa-times
+      h1#logotextdesk Bygg & Vent i Syd AB
+      // <span id="preorlogin">Logga in</span>
+      span#preorlogin(onmouseover="this.style.cursor='pointer'", onmouseout="this.style.cursor='default'", onclick='return tell();') Logga in
+      .off-canvas-menu
+        ul
+          li
+            a#homelink(href='#home') Hem
+          input#sub-check.trigger2(type='checkbox')
+          li
+            label#mobilemenu(for='sub-check', onclick='')
+              i#plus.fa.fa-plus
+              i#minus.fa.fa-minus
+              span Produkter
+          li
+            ul#submenu-products2
+              li
+                a(href='#products') Proteinpulver
+                ul#submenu-protein
+                  li
+                    a(href='#plus') - Protein Plus NY!
+                  li
+                    a(href='#basic') - Protein Basic
+          li#original-products
+            a(href='#products')
+              i.fa.fa-plus
+              | Produkter
+            ul#submenu-products
+              li
+                a(href='#products')
+                  i.fa.fa-plus
+                  | Proteinpulver
+                ul#submenu-protein
+                  li
+                    a(href='#plus') - Protein Plus NY!
+                  li
+                    a(href='#basic') - Protein Basic
+          li
+            a(href='#about') Om oss
+          li
+            a(href='#contact') Kontakta oss
+        span#preorlogin-mobile(onmouseover="this.style.cursor='pointer'", onmouseout="this.style.cursor='default'", onclick='return tell();') Logga in
+      // Menu
+      ul
+        li
+          a#homelink(href='#home') Hem
+        input#sub-check.trigger2(type='checkbox')
+        li
+          label#mobilemenu(for='sub-check', onclick='')
+            i#plus.fa.fa-plus
+            i#minus.fa.fa-minus
+            span Produkter
+        li
+          ul#submenu-products2
+            li
+              a(href='#products') Proteinpulver
+              ul#submenu-protein
+                li
+                  a(href='#plus') - Protein Plus NY!
+                li
+                  a(href='#basic') - Protein Basic
+        li#original-products
+          a(href='#products')
+            i.fa.fa-plus
+            | Produkter
+          ul#submenu-products
+            li
+              a(href='#products')
+                i.fa.fa-plus
+                | Proteinpulver
+              ul#submenu-protein
+                li
+                  a(href='#plus') - Protein Plus NY!
+                li
+                  a(href='#basic') - Protein Basic
+        li
+          a(href='#about') Om oss
+        li
+          a(href='#contact') Kontakta oss
+    section#home.container
+      // Content to display under nav
+      article.latest
+        h2 - Protein Plus -
+        a(href='#products')
+          input#orderbutton(type='button', value='Läs mer')
+        p
+          | Efterlängtade Protein Plus finns nu i lager. Ett kosttillskott av högsta kvalité!
+      // Products
+      section#products.products
+        a(name='products')
+        #test
+          h1 Produkter
+        article#plus
+          .circle-holder
+            .premium-circle
+              span#premium-banner-text Premium
+          h2 Protein Plus
+          figure
+            img(src='images/Products/plus.png', alt='Protein Plus')
+          p
+            | Ett kvalitativt proteinpulver med hela 30% protein. Helt utan socker. Finns i smakerna choklad, karamell och jordgubb!
+          input#productorderbutton(type='button', onclick="alert('Tack för din order')", value='Beställ')
+        article#basic
+          h2 Basic
+          figure
+            img(src='images/Products/basic.jpg', alt='Protein Basic')
+          p
+            | Kosttillskottet för dig som vill komma igång med din träning. Proteinrik och endast 3% socker. Finns i smakerna banan och vanilj. Gratisprov ingår!
+          input#productorderbutton(type='button', onclick="alert('Tack för din order')", value='Beställ')
+      article#about.about
+        h1 Om oss
+        section
+          p
+            | Proteinhuset är Sveriges största leverantör inom träning och kosttillskott. Vi har alltid bra produkter till rätt pris och skickar dina varor samma dag!
+      // Contact information
+      article#contact.contact
+        h1#contactheading Kontakt
+        section
+          // I will create phone and mail links
+          p 010 - 20 30 40 | info@proteinhuset.se
+          p Malmvägen 23, 256 89 Kostis
+          p ©2015 Proteinbutiken AB 
+          p#follow — Följ oss —
+      //
+        <article>
+        <h2>Vill du få en gratis rabattkod?</h2>
+        <figure>
+        <img src="images/fitness-splash.jpg" alt="Article image">
+        <figcaption>Protein PLUS</figcaption>
+        </figure>
+        <p>Äntligen så har vi fått in den eftertrakted produkten Protein PLUS.</p>
+        </article>
+      //
+        Back to top
+        <a href="#home">Go to top</a>
+    footer
+      a(href='https://sv-se.facebook.com/', target='_blank')
+        i#social.fa.fa-facebook
+      a(href='https://twitter.com', target='_blank')
+        i.fa.fa-twitter
+      a(href='https://plus.google.com/', target='_blank')
+        i.fa.fa-google-plus
+      a(href='https://se.pinterest.com/', target='_blank')
+        i.fa.fa-pinterest-p
+  script(type='text/javascript', src='js/hello_world.js')
+  //
+    BUGS
+    * When displaying the menu on mobile/tablet and transforming the window, so that the desktop version triggers, the submenu will be displayd as a row insted of a column. Relod page to fix!
+
