@@ -6,12 +6,17 @@ var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 // Requiring Sourcemaps
 var sourcemaps = require('gulp-sourcemaps');
-//Auto refresh browser on file save
+// Auto refresh browser on file save
 var browserSync = require('browser-sync');
 // Require merge-stream to output multilple tasks to multiple destinations
 var merge = require('merge-stream');
+<<<<<<< HEAD
 // Require gulp-jade
 var jade = require('gulp-jade');
+=======
+// Use jade for file-structure on html-code
+var jade        = require('gulp-jade');
+>>>>>>> 300e7369bdd95285d224277f9dbd7d3f740240af
 
 // Start browserSync server
 gulp.task('browserSync', function () {
@@ -33,6 +38,16 @@ gulp.task('jade', function () {
         }));
 });
 
+// JADE Compiler
+gulp.task('jade', function() {
+  gulp.src('app/jade/*.jade')
+    .pipe(plumber())
+    .pipe(jade({
+      pretty: true
+      }))
+    .pipe(gulp.dest('app/'))
+    .pipe(browserSync.reload({stream: true}))
+});
 
 gulp.task('sass', function () {
     return gulp.src('app/scss/**/*.+(scss|sass)') // Gets all files ending with .scss or .sass in app/scss
@@ -45,6 +60,13 @@ gulp.task('sass', function () {
         .pipe(browserSync.reload({
             stream: true
         }));
+=======
+// WATCH 'gulp'
+gulp.task('watch', ['browserSync', 'sass'], function() {
+  gulp.watch('app/scss/**/*.+(scss|sass)', ['sass']);
+  gulp.watch('app/jade/**', ['jade']);
+  gulp.watch('app/index.html', browserSync.reload);
+>>>>>>> 300e7369bdd95285d224277f9dbd7d3f740240af
 });
 
 
