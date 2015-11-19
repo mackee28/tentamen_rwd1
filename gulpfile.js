@@ -6,10 +6,12 @@ var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 // Requiring Sourcemaps
 var sourcemaps = require('gulp-sourcemaps');
-//Auto refresh browser on file save
+// Auto refresh browser on file save
 var browserSync = require('browser-sync');
 // Require merge-stream to output multilple tasks to multiple destinations
 var merge = require('merge-stream');
+// Use jade for file-structure on html-code
+var jade        = require('gulp-jade');
 
 // Start browserSync server
 gulp.task('browserSync', function() {
@@ -34,9 +36,21 @@ gulp.task('sass', function() {
     }));
 });
 
+// JADE Compiler
+gulp.task('jade', function() {
+  gulp.src('app/jade/*.jade')
+    .pipe(plumber())
+    .pipe(jade({
+      pretty: true
+      }))
+    .pipe(gulp.dest('app/'))
+    .pipe(browserSync.reload({stream: true}))
+});
 
+// WATCH 'gulp'
 gulp.task('watch', ['browserSync', 'sass'], function() {
   gulp.watch('app/scss/**/*.+(scss|sass)', ['sass']);
+  gulp.watch('app/jade/**', ['jade']);
   gulp.watch('app/index.html', browserSync.reload);
 });
 
