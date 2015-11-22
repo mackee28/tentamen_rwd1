@@ -10,7 +10,6 @@ var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require('browser-sync');
 // Require merge-stream to output multilple tasks to multiple destinations
 var merge = require('merge-stream');
-
 // Require gulp-jade
 var jade = require('gulp-jade');
 
@@ -24,27 +23,7 @@ gulp.task('browserSync', function () {
     });
 });
 
-
-// JADE
-gulp.task('jade', function () {
-    gulp.src('app/jade/*.jade')
-        .pipe(jade()) // pip to jade plugin
-        .pipe(gulp.dest('app/'))
-        .pipe(browserSync.reload({
-            stream: true
-        }));
-});
-
-// JADE Compiler
-gulp.task('jade', function() {
-  gulp.src('app/jade/*.jade')
-    .pipe(jade({
-      pretty: true
-      }))
-    .pipe(gulp.dest('app/'))
-    .pipe(browserSync.reload({stream: true}))
-});
-
+// SASS
 gulp.task('sass', function () {
     return gulp.src('app/scss/**/*.+(scss|sass)') // Gets all files ending with .scss or .sass in app/scss
         .pipe(sourcemaps.init()) // Initialize sourcemap plugin
@@ -57,17 +36,24 @@ gulp.task('sass', function () {
             stream: true
         }));
 });
-// WATCH 'gulp'
-gulp.task('watch', ['browserSync', 'sass'], function() {
-  gulp.watch('app/scss/**/*.+(scss|sass)', ['sass']);
-  gulp.watch('app/jade/**', ['jade']);
-  gulp.watch('app/index.html', browserSync.reload);
+
+// JADE
+gulp.task('jade', function () {
+    gulp.src('app/jade/*.jade')
+        .pipe(jade({
+            pretty: true})) // pip to jade plugin
+        .pipe(gulp.dest('app/'))
+        .pipe(browserSync.reload({
+            stream: true
+        }));
 });
 
 
-gulp.task('watch', ['browserSync', 'sass'], function () {
-    gulp.watch('app/scss/**/*.+(scss|sass)', ['sass']);
-    gulp.watch('app/index.html', browserSync.reload);
+// WATCH 'gulp'
+gulp.task('watch', ['browserSync'], function() {
+  gulp.watch('app/scss/**/*.+(scss|sass)', ['sass']);
+  gulp.watch('app/jade/**', ['jade']);
+  gulp.watch('app/index.html', browserSync.reload);
 });
 
 gulp.task('prod', function () {
@@ -87,4 +73,4 @@ gulp.task('prod', function () {
 });
 
 // Creating a default task
-gulp.task('default', ['sass', 'watch', 'prod']);
+gulp.task('default', ['sass', 'jade', 'watch', 'prod']);

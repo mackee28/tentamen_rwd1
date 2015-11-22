@@ -5,10 +5,10 @@ html(lang='sv')
     // Set Device Proporties
     meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0')
     // Head HTML Proporties
-    meta(name='description', content='Bygg & Vent i Syd AB Hemsida')
+    meta(name='description', content='Bygg &amp; Vent i Syd AB Hemsida')
     meta(name='keywords', content='bygg, ventilation, vent, syd, åhus, kristianstad, skåne')
-    meta(name='author', content='Bygg & Vent i Syd AB')
-    title Bygg & Vent i Syd AB
+    meta(name='author', content='Bygg &amp; Vent i Syd AB')
+    title Bygg &amp; Vent i Syd AB
     // Reset
     link(rel='stylesheet', href='css/reset.css')
     // Style
@@ -23,91 +23,71 @@ html(lang='sv')
     nav#nav(role='navigation')
       input#mainNavButton.trigger(type='checkbox')
       label#mobilemenu(for='mainNavButton', onclick='')
-        p#logotext Bygg & Vent i Syd AB
+        p#logotext Bygg &amp; Vent i Syd AB
         i#hamburgericon.fa.fa-bars
         i.fa.fa-times
-      h1#logotextdesk Bygg & Vent i Syd AB
+      h1#logotextdesk Bygg &amp; Vent i Syd AB
       // <span id="preorlogin">Logga in</span>
-      span#preorlogin(onmouseover="this.style.cursor='pointer'", onmouseout="this.style.cursor='default'", onclick='return tell();') Logga in
       .off-canvas-menu
         ul
           li
-            a#homelink(href='#home') Hem
-          input#sub-check.trigger2(type='checkbox')
+            label#mobilemenu(for='home', onclick='')
+              span Hem   
           li
-            label#mobilemenu(for='sub-check', onclick='')
+            label#mobilemenu(for='about-us', onclick='')
+              span Om oss       
+          li
+            label#mobilemenu(for='services', onclick='')
+              span Tjänster  
+          li
+            input#sub-check-ref.trigger(type='checkbox')
+            label#mobilemenu(for='sub-check-ref', onclick='')
               i#plus.fa.fa-plus
               i#minus.fa.fa-minus
-              span Produkter
+              span Referenser
+            ul#submenu-ref
+                li
+                 a(href='#products') Badrum
+                li
+                 a(href='#products') Fönster
+                li
+                 a(href='#products') Nyproduktion
+                li
+                 a(href='#products') Ventilation
+                li
+                 a(href='#products') Kök
+                li
+                 a(href='#products') Övriga renoveringar
           li
-            ul#submenu-products2
-              li
-                a(href='#products') Proteinpulver
-                ul#submenu-protein
-                  li
-                    a(href='#plus') - Protein Plus NY!
-                  li
-                    a(href='#basic') - Protein Basic
-          li#original-products
-            a(href='#products')
-              i.fa.fa-plus
-              | Produkter
-            ul#submenu-products
-              li
-                a(href='#products')
-                  i.fa.fa-plus
-                  | Proteinpulver
-                ul#submenu-protein
-                  li
-                    a(href='#plus') - Protein Plus NY!
-                  li
-                    a(href='#basic') - Protein Basic
-          li
-            a(href='#about') Om oss
-          li
-            a(href='#contact') Kontakta oss
-        span#preorlogin-mobile(onmouseover="this.style.cursor='pointer'", onmouseout="this.style.cursor='default'", onclick='return tell();') Logga in
+            label#mobilemenu(for='contact', onclick='')
+              span Kontakt 
       // Menu
       ul
         li
-          a#homelink(href='#home') Hem
+          a#homelink(href='#home') HemDesktop
         input#sub-check.trigger2(type='checkbox')
-        li
-          label#mobilemenu(for='sub-check', onclick='')
-            i#plus.fa.fa-plus
-            i#minus.fa.fa-minus
-            span Produkter
-        li
-          ul#submenu-products2
-            li
-              a(href='#products') Proteinpulver
-              ul#submenu-protein
-                li
-                  a(href='#plus') - Protein Plus NY!
-                li
-                  a(href='#basic') - Protein Basic
         li#original-products
           a(href='#products')
             i.fa.fa-plus
-            | Produkter
+            | ProdukterD
           ul#submenu-products
             li
               a(href='#products')
                 i.fa.fa-plus
-                | Proteinpulver
+                | ProteinpulverD
               ul#submenu-protein
                 li
-                  a(href='#plus') - Protein Plus NY!
+                  a(href='#plus') - Protein Plus NY!D
                 li
-                  a(href='#basic') - Protein Basic
+                  a(href='#basic') - Protein BasicD
         li
-          a(href='#about') Om oss
+          a(href='#about') Om ossD
         li
-          a(href='#contact') Kontakta oss
+          a(href='#contact') Kontakta ossD
     section#home.container
       // Content to display under nav
       article.latest
-        h2 - Protein Plus -
+        h2 - Byggisydab.se -
         a(href='#products')
           input#orderbutton(type='button', value='Läs mer')
         p
@@ -144,22 +124,13 @@ html(lang='sv')
         h1#contactheading Kontakt
         section
           // I will create phone and mail links
-          p 010 - 20 30 40 | info@proteinhuset.se
-          p Malmvägen 23, 256 89 Kostis
-          p ©2015 Proteinbutiken AB 
+          p 044 - 777 00 33 | byggisyd@gmail.com
+          p Norra Piggagatan 5, 296 33 Åhus
+          p Bygg &amp; Vent i Syd AB 
           p#follow — Följ oss —
-      //
-        <article>
-        <h2>Vill du få en gratis rabattkod?</h2>
-        <figure>
-        <img src="images/fitness-splash.jpg" alt="Article image">
-        <figcaption>Protein PLUS</figcaption>
-        </figure>
-        <p>Äntligen så har vi fått in den eftertrakted produkten Protein PLUS.</p>
-        </article>
-      //
-        Back to top
-        <a href="#home">Go to top</a>
+
+        //Back to top
+        //<a href="#home">Go to top</a>
     footer
       a(href='https://sv-se.facebook.com/', target='_blank')
         i#social.fa.fa-facebook
