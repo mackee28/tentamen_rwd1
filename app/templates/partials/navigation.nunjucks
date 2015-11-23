@@ -1,6 +1,38 @@
-<!-- navigation.nunjucks -->
-<nav>
-  <a href="#">Home</a>
-  <a href="#">About</a>
-  <a href="#">Contact</a>
+<!-- Navigation Partial -->
+<nav id="nav" role="navigation">
+    <input id="mainNavButton" type="checkbox" class="trigger">
+    <!-- Navigation Logo -->
+    <label id="logo-nav" for="mainNavButton" onclick="">
+        <p id="logotext">Bygg &amp; Vent i Syd AB</p><i id="hamburgericon" class="fa fa-bars"></i><i class="fa fa-times"></i>
+    </label>
+    <!-- Off-canvas on mobile & tablet || sticky-menu on desktop  -->
+    <div class="menu-holder">
+        <ul>
+            <li>
+                <label id="menu-home" for="home" onclick=""><span>Hem</span></label>
+            </li>
+            <li>
+                <label id="menu-about" for="about-us" onclick=""><span>Om oss</span></label>
+            </li>
+            <li>
+                <label id="menu-services" for="services" onclick=""><span>Tjänster</span></label>
+            </li>
+            <li>
+                <input id="sub-check-ref" type="checkbox" class="trigger">
+                <label id="menu-references" for="sub-check-ref" onclick=""><i id="plus-ref" class="fa fa-plus"></i><i id="minus-ref" class="fa fa-minus"></i><span>Referenser</span></label>
+                <!-- Submenu for references  -->
+                <ul id="submenu-ref">
+                    <li><a href="references-badrum">Badrum</a></li>
+                    <li><a href="references-fonster">Fönster</a></li>
+                    <li><a href="references-nyproduktion">Nyproduktion</a></li>
+                    <li><a href="references-ventilation">Ventilation</a></li>
+                    <li><a href="references-kok">Kök</a></li>
+                    <li><a href="references-ovriga-renoveringar">Övriga renoveringar</a></li>
+                </ul>
+            </li>
+            <li>
+                <label id="menu-contact" for="contact" onclick=""><span>Kontakt</span></label>
+            </li>
+        </ul>
+    </div>
 </nav>
