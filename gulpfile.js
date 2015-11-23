@@ -16,10 +16,6 @@ var nunjucksRender = require('gulp-nunjucks-render');
 var plumber = require('gulp-plumber');
 // Other requires
 var notify = require('gulp-notify');
-//Read Data
-var data = require('gulp-data');
-//read JSON data
-var fs = require('fs');
 
 // Start browserSync server
 gulp.task('browserSync', function() {
@@ -46,9 +42,6 @@ gulp.task('nunjucks', function() {
   nunjucksRender.nunjucks.configure(['app/templates/'], {watch: false});
   return gulp.src('app/pages/**/*.+(html|nunjucks)')
     .pipe(customPlumber('Error Running Nunjucks'))
-    .pipe(data(function() {
-      return JSON.parse(fs.readFileSync('./app/data.json'))
-    }))
     .pipe(nunjucksRender())
     .pipe(gulp.dest('app'))
     .pipe(browserSync.reload({
@@ -77,7 +70,6 @@ gulp.task('watch', ['browserSync', 'nunjucks', 'sass'], function() {
 gulp.watch([
     'app/templates/**/*',
     'app/pages/**/*.+(html|nunjucks)',
-    'app/data.json',
     ], ['nunjucks'] // runs Nunjucks task
   );
 gulp.watch('app/scss/**/*.+(scss|sass)', ['sass']);
