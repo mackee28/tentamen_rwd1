@@ -2,12 +2,12 @@
 <nav id="nav" role="navigation">
     <input id="mainNavButton" type="checkbox" class="trigger">
     <!-- Navigation Logo -->
-    <label id="logo-nav" for="mainNavButton" onclick="">
-        <p id="logotext">Bygg &amp; Vent i Syd AB</p><i id="hamburgericon" class="fa fa-bars"></i><i class="fa fa-times"></i>
+    <label id="hamburger_label" for="mainNavButton" onclick="">
+        <i id="hamburgericon" class="fa fa-bars"></i><i class="fa fa-times"></i>
     </label>
     <!-- Off-canvas on mobile & tablet || sticky-menu on desktop  -->
     <div class="menu-holder">
-        <ul>
+        <ul class="menu_original">
             <li>
                 <label id="menu-home" for="home" onclick=""><span>Hem</span></label>
             </li>
@@ -18,7 +18,7 @@
                 <label id="menu-services" for="services" onclick=""><span>Tjänster</span></label>
             </li>
             <li>
-                <input id="sub-check-ref" type="checkbox" class="trigger">
+                <input id="sub-check-ref" type="checkbox" class="trigger-ref">
                 <label id="menu-references" for="sub-check-ref" onclick=""><i id="plus-ref" class="fa fa-plus"></i><i id="minus-ref" class="fa fa-minus"></i><span>Referenser</span></label>
                 <!-- Submenu for references  -->
                 <ul id="submenu-ref">

@@ -1,2 +1,7 @@
 <!-- footer.nunjucks -->
- <footer class="info">&#169; SAAB VIGGEN</footer>
+<footer>
+    <a href="https://sv-se.facebook.com/" target="_blank"><i id="social" class="fa fa-facebook"></i></a>
+    <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+    <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a>
+    <a href="https://se.pinterest.com/" target="_blank"><i class="fa fa-pinterest-p"></i></a>
+</footer>

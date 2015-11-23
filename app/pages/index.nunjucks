@@ -1,13 +1,62 @@
 <!-- index.nunjucks -->
 {% extends "layout.nunjucks" %}
 
+
 {% block content %}
+
 <!-- Adds the navigation partial -->
 {% include "partials/navigation.nunjucks" %}
-<h1>This is the index page</h1>
-<h2>This could also be the index page</h2>
-<div class="myDiv">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta est ipsam officia consectetur repellendus perspiciatis minus aspernatur quod quo error tempore facere dolore, sint temporibus, blanditiis molestiae voluptates adipisci ut.</p>
-</div>
+
+<section id="home" class="container">
+      <!-- Content to display under nav-->
+      <article class="latest">
+        <h2>- Byggisydab.se -</h2><a href="#products">
+          <input id="orderbutton" type="button" value="Läs mer"></a>
+        <p>Efterlängtade Protein Plus finns nu i lager. Ett kosttillskott av högsta kvalité!</p>
+      </article>
+      <!-- Products-->
+      <section id="products" class="products"><a name="products"></a>
+        <div id="test">
+          <h1>Produkter</h1>
+        </div>
+        <article id="plus">
+          <div class="circle-holder">
+            <div class="premium-circle"><span id="premium-banner-text">Premium</span></div>
+          </div>
+          <h2>Protein Plus</h2>
+          <figure><img src="images/Products/plus.png" alt="Protein Plus"></figure>
+          <p>Ett kvalitativt proteinpulver med hela 30% protein. Helt utan socker. Finns i smakerna choklad, karamell och jordgubb!</p>
+          <input id="productorderbutton" type="button" onclick="alert('Tack för din order')" value="Beställ">
+        </article>
+        <article id="basic">
+          <h2>Basic</h2>
+          <figure><img src="images/Products/basic.jpg" alt="Protein Basic"></figure>
+          <p>Kosttillskottet för dig som vill komma igång med din träning. Proteinrik och endast 3% socker. Finns i smakerna banan och vanilj. Gratisprov ingår!</p>
+          <input id="productorderbutton" type="button" onclick="alert('Tack för din order')" value="Beställ">
+        </article>
+      </section>
+      <article id="about" class="about">
+        <h1>Om oss</h1>
+        <section>
+          <p>Proteinhuset är Sveriges största leverantör inom träning och kosttillskott. Vi har alltid bra produkter till rätt pris och skickar dina varor samma dag!</p>
+        </section>
+      </article>
+      <!-- Contact information-->
+      <article id="contact" class="contact">
+        <h1 id="contactheading">Kontakt</h1>
+        <section>
+          <!-- I will create phone and mail links-->
+          <p>044 - 777 00 33 | byggisyd@gmail.com</p>
+          <p>Norra Piggagatan 5, 296 33 Åhus</p>
+          <p>Bygg &amp; Vent i Syd AB </p>
+          <p id="follow">— Följ oss —</p>
+        </section>
+        <!--Back to top-->
+        <!--<a href="#home">Go to top</a>-->
+      </article>
+    </section>
+
+
 {% include "partials/footer.nunjucks" %}
+
 {% endblock %}
