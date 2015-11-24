@@ -23,60 +23,52 @@
   </head>
   <!-- BODY-->
   <body>
-    <nav id="nav" role="navigation">
-      <input id="mainNavButton" type="checkbox" class="trigger">
-      <label id="mobilemenu" for="mainNavButton" onclick="">
-        <p id="logotext">Bygg &amp; Vent i Syd AB</p><i id="hamburgericon" class="fa fa-bars"></i><i class="fa fa-times"></i>
-      </label>
-      <h1 id="logotextdesk">Bygg &amp; Vent i Syd AB</h1>
-      <!-- <span id="preorlogin">Logga in</span>-->
-      <div class="off-canvas-menu">
-        <ul>
-          <li>
-            <label id="mobilemenu" for="home" onclick=""><span>Hem   </span></label>
-          </li>
-          <li>
-            <label id="mobilemenu" for="about-us" onclick=""><span>Om oss       </span></label>
-          </li>
-          <li>
-            <label id="mobilemenu" for="services" onclick=""><span>Tjänster  </span></label>
-          </li>
-          <li>
-            <input id="sub-check-ref" type="checkbox" class="trigger">
-            <label id="mobilemenu" for="sub-check-ref" onclick=""><i id="plus" class="fa fa-plus"></i><i id="minus" class="fa fa-minus"></i><span>Referenser</span></label>
-            <ul id="submenu-ref">
-              <li><a href="#products">Badrum</a></li>
-              <li><a href="#products">Fönster</a></li>
-              <li><a href="#products">Nyproduktion</a></li>
-              <li><a href="#products">Ventilation</a></li>
-              <li><a href="#products">Kök</a></li>
-              <li><a href="#products">Övriga renoveringar</a></li>
-            </ul>
-          </li>
-          <li>
-            <label id="mobilemenu" for="contact" onclick=""><span>Kontakt </span></label>
-          </li>
-        </ul>
-      </div>
-      <!-- Menu-->
-      <ul>
-        <li><a id="homelink" href="#home">HemDesktop</a></li>
-        <input id="sub-check" type="checkbox" class="trigger2">
-        <li id="original-products"><a href="#products"><i class="fa fa-plus"></i>ProdukterD</a>
-          <ul id="submenu-products">
-            <li><a href="#products"><i class="fa fa-plus"></i>ProteinpulverD</a>
-              <ul id="submenu-protein">
-                <li><a href="#plus">- Protein Plus NY!D</a></li>
-                <li><a href="#basic">- Protein BasicD</a></li>
-              </ul>
+
+  <!-- You write code for this content block in another file -->
+
+
+<!-- Adds the navigation partial -->
+<!-- Navigation Partial -->
+<nav id="nav" role="navigation">
+    <input id="mainNavButton" type="checkbox" class="trigger">
+    <!-- Navigation Logo -->
+    <label id="hamburger_label" for="mainNavButton" onclick="">
+        <i id="hamburgericon" class="fa fa-bars"></i><i class="fa fa-times"></i>
+    </label>
+    <!-- Off-canvas on mobile & tablet || sticky-menu on desktop  -->
+    <div class="menu-holder">
+        <ul class="menu_original">
+            <li>
+                <label id="menu-home" for="home" onclick=""><span>Hem</span></label>
             </li>
-          </ul>
-        </li>
-        <li><a href="#about">Om ossD</a></li>
-        <li><a href="#contact">Kontakta ossD</a></li>
-      </ul>
-    </nav>
-    <section id="home" class="container">
+            <li>
+                <label id="menu-about" for="about-us" onclick=""><span>Om oss</span></label>
+            </li>
+            <li>
+                <label id="menu-services" for="services" onclick=""><span>Tjänster</span></label>
+            </li>
+            <li>
+                <input id="sub-check-ref" type="checkbox" class="trigger-ref">
+                <label id="menu-references" for="sub-check-ref" onclick=""><i id="plus-ref" class="fa fa-plus"></i><i id="minus-ref" class="fa fa-minus"></i><span>Referenser</span></label>
+                <!-- Submenu for references  -->
+                <ul id="submenu-ref">
+                    <li><a href="references-badrum">Badrum</a></li>
+                    <li><a href="references-fonster">Fönster</a></li>
+                    <li><a href="references-nyproduktion">Nyproduktion</a></li>
+                    <li><a href="references-ventilation">Ventilation</a></li>
+                    <li><a href="references-kok">Kök</a></li>
+                    <li><a href="references-ovriga-renoveringar">Övriga renoveringar</a></li>
+                </ul>
+            </li>
+            <li>
+                <label id="menu-contact" for="contact" onclick=""><span>Kontakt</span></label>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<section id="home" class="container">
       <!-- Content to display under nav-->
       <article class="latest">
         <h2>- Byggisydab.se -</h2><a href="#products">
@@ -124,7 +116,19 @@
         <!--<a href="#home">Go to top</a>-->
       </article>
     </section>
-    <footer><a href="https://sv-se.facebook.com/" target="_blank"><i id="social" class="fa fa-facebook"></i></a><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a><a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a><a href="https://se.pinterest.com/" target="_blank"><i class="fa fa-pinterest-p"></i></a></footer>
+
+
+<!-- footer.nunjucks -->
+<footer>
+    <a href="https://sv-se.facebook.com/" target="_blank"><i id="social" class="fa fa-facebook"></i></a>
+    <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+    <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a>
+    <a href="https://se.pinterest.com/" target="_blank"><i class="fa fa-pinterest-p"></i></a>
+</footer>
+
+
+
+
   </body>
   <script type="text/javascript" src="js/hello_world.js"></script>
   <!--

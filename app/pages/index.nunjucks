@@ -8,40 +8,136 @@
 {% include "partials/navigation.nunjucks" %}
 
 <section id="home" class="container">
-      <!-- Content to display under nav-->
-      <article class="latest">
-        <h2>- Byggisydab.se -</h2><a href="#products">
-          <input id="orderbutton" type="button" value="Läs mer"></a>
-        <p>Efterlängtade Protein Plus finns nu i lager. Ett kosttillskott av högsta kvalité!</p>
+      <!-- Welcome-->
+      <article class="welcome">
+          <h2>- Bygg &amp; Vent i Syd AB  -</h2><a href="#welcome"></a>
+        <p>Vi utför allt inom byggnation och ventilation. Kontakta oss för en kostnadsfri offert redan idag!</p>
+
+
+
+            <i class="fa fa-chevron-circle-down"></i>
+
+
       </article>
-      <!-- Products-->
-      <section id="products" class="products"><a name="products"></a>
-        <div id="test">
-          <h1>Produkter</h1>
-        </div>
-        <article id="plus">
-          <div class="circle-holder">
-            <div class="premium-circle"><span id="premium-banner-text">Premium</span></div>
-          </div>
-          <h2>Protein Plus</h2>
-          <figure><img src="images/Products/plus.png" alt="Protein Plus"></figure>
-          <p>Ett kvalitativt proteinpulver med hela 30% protein. Helt utan socker. Finns i smakerna choklad, karamell och jordgubb!</p>
-          <input id="productorderbutton" type="button" onclick="alert('Tack för din order')" value="Beställ">
-        </article>
-        <article id="basic">
-          <h2>Basic</h2>
-          <figure><img src="images/Products/basic.jpg" alt="Protein Basic"></figure>
-          <p>Kosttillskottet för dig som vill komma igång med din träning. Proteinrik och endast 3% socker. Finns i smakerna banan och vanilj. Gratisprov ingår!</p>
-          <input id="productorderbutton" type="button" onclick="alert('Tack för din order')" value="Beställ">
-        </article>
-      </section>
-      <article id="about" class="about">
+      <!-- About us-->
+      <article class="about">
         <h1>Om oss</h1>
-        <section>
-          <p>Proteinhuset är Sveriges största leverantör inom träning och kosttillskott. Vi har alltid bra produkter till rätt pris och skickar dina varor samma dag!</p>
+        <section class="about_des">
+          <p>Bygg &amp; Vent I Syd AB är ett företag inom byggnation och ventilation, vi är ofta en totalentreprenad då vi utför allt som behövs till ditt projekt, Byggnation, ventilation, måleri, vvs, el-tjänster osv..  Vi tar gärna emot alla projekt stora som små och tar fram en bra och kostnadsfri lösning till kunden.</p>
+
+<p>Företaget bildades i April 2014 och växer kontunerligt framåt, vår utgångspunkt är från Åhus/Kristianstad men gör jobb över hela Skåne län. Vår huvudsak är att alltid jobba hårt och satsa på hög kvalitet på ditt projekt och såklart göra kunden nöjd! Företaget har en väldigt bredkunskap inom branschen. Vi gör renoveringar, nyproduktion, fastighetsskötsel och mycket mer.</p>
+
+<p>Bygg &amp; Vent I Syd AB är återförsäljare till företaget Laganfönster. Vi säljer och monterar för extremt bra priser till en hög kvalité på fönster och montering. Vill ni veta mer om Laganfönster kan ni gå in på www.laganfonster.se eller kontakta oss.</p>
+
+<p>Vi som företag kan erbjuda våra kunder en räntefri avbetalning via Wasa Kredit på kundens projekt, vilket som är lite unikt för ett mindre företag inom branschen och som kan hjälpa kunden till en bra lösning.</p>
+
+<p>Om övriga frågor kontakta oss gärna. Som sagt vi erbjuder en kostnadsfri offert, tveka inte att ta kontakt.</p>
         </section>
+        <div class="employees_images">
+            <img src="images/about_us/employees/John_Watson_300x300.jpg" alt="employee">
+            <img src="images/about_us/employees/Robert_White_300x300.jpg" alt="employee">
+            <img src="images/about_us/employees/Tom_Jerry_300x300.jpg" alt="employee">
+            <img src="images/about_us/employees/John_Watson_300x300.jpg" alt="employee">
+        </div>
       </article>
-      <!-- Contact information-->
+      <!-- Services -->
+      <section class="services">
+        <h1>Tjänster</h1>
+
+        <section id="totalentrepenad">
+        <img src="images/services/icons/tools7.svg" alt="test">
+         <h3>Totalentrepenad</h3>
+          <p>Vi utför totalentreprenad, håll kontakten med oss sedan sköter vi resten för att skapa ditt projekt. Vi har ett gott samarbete med många underentreprenörer med en hög tillit. Vi projekterar ert projekt från början till slut.</p>
+        </section>
+
+        <section id="ventilation">
+        <img src="images/services/icons/car46.svg" alt="test">
+         <h3>Ventilation</h3>
+          <p>Vi gör så att ni lever i en frisk miljö och får ett friskt hus. Vi utför både ventilation till boende och industri. Diskutera gärna med oss så tar vi fram tips och lösningar för att förbättra er ventilation.</p>
+        </section>
+
+         <section id="nyproduktion">
+         <img src="images/services/icons/house158.svg" alt="test">
+         <h3>Nyproduktion</h3>
+          <p>Vi bygger ditt hus från grunden till nyckelfärdigt. Hjälper er med det ni behöver och kommer fram till en bra lösning genom ett bra samarbete. Vi bygger och har erfarenhet av sten-, trä- och frigolithus.</p>
+        </section>
+
+         <section id="badrum">
+         <img src="images/services/icons/hygiene11.svg" alt="test">
+         <h3>Badrum</h3>
+          <p>Vi monterar tätskikt till ditt badrum. Trycker kakel och klinker. Har ett bra samarbete med mattläggare. Vi bygger om stommen bakom ditt tätskikt till vad som är godkänt idag. Vi kan helt enkelt erbjuda det du behöver för att anpassa badrummet till exakt så som du vill ha det!</p>
+        </section>
+
+         <section id="maleri">
+         <img src="images/services/icons/paintbrush8.svg" alt="test">
+         <h3>Måleri</h3>
+          <p>Behöver ni fräscha upp ert hus lite är det lättaste alternativet att få in lite ny målarfärg i hemmet eller på fasaden. Målarfärg kan göra en stor skillnad i ert hem. Vi löser stora som små projekt. Kanske en ny tapet som fondvägg kan vara aktuellt då fixar vi det också.</p>
+         </section>
+
+         <section id="fonster">
+         <img src="images/services/icons/window-frame.svg" alt="test">
+         <h3>Fönster</h3>
+          <p>Vi är återförsäljare till Laganfönster. Där vi kan erbjuda varje fönster skräddarsytt till just ert projekt. Välj vilken storlek du vill ha, välj färg och välj vilket material på fönstret som passar er bäst. Vi erbjuder Pvc-fönster, Trä-fönster och Trä/aluminum-fönster. Vi brukar rekommendera våra Pvc-fönster då de är väldigt bra priser till den höga kvalitén. Har du funderingar kring våra fönster gå in på www.laganfonster.se och läs mer. Eller ta kontakt med oss.</p>
+        </section>
+
+         <section id="wasa_kredit">
+         <img src="images/services/icons/money478.svg" alt="test">
+         <h3>Wasa Kredit</h3>
+          <p>VVi har den unika chansen som ett litet företag i vår bransch erbjuda våra kunder räntefri avbetalning genom Wasa Kredit! Detta kan hjälpa er till att göra de där lilla extra i hemmet. Tillexempel byt alla dina fönster på en villa för ca 1500:- kr i månaden! För mer info kontakta oss.</p>
+        </section>
+
+         <section id="mur_putsning">
+         <img src="images/services/icons/bricks11.svg" alt="test">
+         <h3>Mur &amp; putsning</h3>
+          <p>VVi utför murning så som murning av lekablock, siporexblock och tegling. Behöver du hjälp med att putslaga eller till och med putsa hela din hus fasad så kan vi lösa detta.</p>
+         </section>
+
+      </section>
+      <!-- References-->
+      <section class="references"><a name="references"></a>
+          <h1>Referenser</h1>
+          <div class="ref_gallery">
+            <div class="ref_holder">
+                <img src="images/about_us/employees/John_Watson_300x300.jpg" alt="employee">
+                <div class="overlay">
+                    <h1>Badrum</h1>
+                </div>
+            </div>
+            <div class="ref_holder">
+                <img src="images/about_us/employees/John_Watson_300x300.jpg" alt="employee">
+                <div class="overlay">
+                    <h1>Fönster</h1>
+                </div>
+            </div>
+            <div class="ref_holder">
+                <img src="images/about_us/employees/John_Watson_300x300.jpg" alt="employee">
+                <div class="overlay">
+                    <h1>Nyproduktion</h1>
+                </div>
+                </div>
+            <div class="ref_holder">
+                <img src="images/about_us/employees/John_Watson_300x300.jpg" alt="employee">
+                <div class="overlay">
+                    <h1>Ventilation</h1>
+                </div>
+                </div>
+            <div class="ref_holder">
+                <img src="images/about_us/employees/John_Watson_300x300.jpg" alt="employee">
+                <div class="overlay">
+                    <h1>Kök</h1>
+                </div>
+                </div>
+            <div class="ref_holder">
+                <img src="images/about_us/employees/John_Watson_300x300.jpg" alt="employee">
+                <div class="overlay">
+                    <h1>Övriga renoveringar</h1>
+                </div>
+                </div>
+          </div>
+
+
+      </section>
+      <!-- Contact information -->
       <article id="contact" class="contact">
         <h1 id="contactheading">Kontakt</h1>
         <section>
@@ -54,9 +150,9 @@
         <!--Back to top-->
         <!--<a href="#home">Go to top</a>-->
       </article>
-    </section>
+</section>
 
-
+<!-- Footer partial -->
 {% include "partials/footer.nunjucks" %}
 
 {% endblock %}
