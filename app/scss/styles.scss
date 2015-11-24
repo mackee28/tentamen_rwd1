@@ -53,8 +53,17 @@ body {
         padding: 0;
     }
 }
-h1,
-h2,
+h1 {
+    color: #ffffff;
+    font-family: 'Revue Std Bold', sans-serif;
+    font-size: 7vw;
+}
+h2 {
+    margin-top: 2.5em;
+    color: #ffffff;
+    font-family: 'Revue Std Bold', sans-serif;
+    font-size: 7vw;
+}
 p {
     color: #ffffff;
     font-family: 'Open Sans', sans-serif;
@@ -247,9 +256,7 @@ p {
         height: 100vh;
         h2 {
             background-color: rgba(0, 0, 0, 0.5);
-            font-family: 'open sans', 'sans-serf';
             border-radius: 1vh;
-            font-size: 5vh;
             padding: 2vh;
             justify-content: space-around;
         }
@@ -273,6 +280,27 @@ p {
     /* WELCOME END */
     /* ABOUT */
     .about {
+        background-color: #ffffff;
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        height: auto;
+        h2 {
+            color: #000000;
+            margin-top: 2.5em;
+        }
+        .about_des {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+            p {
+                color: #000000;
+                width: 80vw;
+                max-width: 400px;
+                padding-bottom: 0.1em;
+            }
+        }
         .employees_images {
             display: flex;
             flex-wrap: wrap;
@@ -280,6 +308,7 @@ p {
             margin-bottom: 5%;
             img {
                 width: 45%;
+                height: 45%;
             }
         }
     }
@@ -287,7 +316,7 @@ p {
     /* SERVICES */
     .services {
         background-color: $orange_color;
-        h1 {
+        h2 {
             color: #222222;
         }
         section {
@@ -301,7 +330,7 @@ p {
                 margin-bottom: 1em;
             }
             h3 {
-                color: #000000;
+                color: #222222;
                 padding: 0;
                 margin: 0;
                 margin-bottom: 0.5em;
@@ -352,216 +381,64 @@ p {
                     -webkit-transition: all .5s;
                     -moz-transition: all .5s
                 }
-
             }
             .ref_holder:hover .overlay {
-                    top:0;
-                }
+                top: 0;
+            }
         }
     }
     /* REFERENCES END */
-    .products {
-        margin: 0;
-    }
-    .products h1 {
-        background-color: $dark_green_color;
-        z-index: 3;
-        width: 100%;
-        height: auto;
-        margin: 0;
-        padding: 0;
-        position: absolute;
-    }
-    /* --- Products-bar --- */
-    .products #test {
-        background-color: #ffffff;
-        height: 2.7em;
-        width: 100%;
-        z-index: 3;
-    }
 }
+
+/********************* CONTAINER END ********************/
+
 %templetorderbutton {
     color: $orange_color;
-}
-
-/* Read more button*/
-
-
-/*--- Premium Ribbon ---*/
-
-.container {
-    .products #plus .circle-holder {
-        position: absolute;
-        width: 100%;
-        background-color: transparent;
-        z-index: 1;
-    }
-    .products #plus {
-        z-index: 2;
-    }
-    .products #plus .premium-circle {
-        width: 200px;
-        position: absolute;
-        top: 25px;
-        left: -50px;
-        text-align: center;
-        line-height: 50px;
-        letter-spacing: 1px;
-        color: #f0f0f0;
-        -ms-transform: rotate(-45deg);
-        transform: rotate(-45deg);
-        -webkit-transform: rotate(-45deg);
-        background-color: darken( $ribbon_color, 15%);
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
-}
-
-/* PRODUCTS */
-
-.products {
-    background-color: $dark_green_color;
-    h2 {
-        color: #ffffff;
-    }
-    article {
-        background-color: #ffffff;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-        border-bottom: 2px solid $dark_green_color;
-        margin: 0;
-        padding: 0;
-        h2 {
-            color: $dark_grey_color;
-        }
-        p {
-            @extend h2;
-            width: 90%;
-        }
-    }
-}
-#productorderbutton {
-    background-color: $light_green_color;
-    color: #ffffff;
-    border: 2px solid #ffffff;
-    padding-top: 3vh;
-    padding-bottom: 3vh;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    margin-bottom: 5vh;
-    text-align: center;
-}
-#productorderbutton:hover {
-    background-color: $dark_green_color;
-    text-align: center;
-}
-
-/* ----- ABOUT ----- */
-
-.about {
-    background-color: #000000;
-    display: flex;
-    align-content: center;
-    flex-direction: column;
-    height: auto;
-    .about_des {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-        p {
-            width: 80vw;
-            max-width: 400px;
-            padding-bottom: 0.1em;
-        }
-    }
 }
 
 /* ----- CONTACT ----- */
 
 .contact {
     background-color: $dark_grey_color;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
     align-items: center;
-}
-.contact section {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-box-flex: 2;
-    -webkit-flex: 2;
-    -ms-flex: 2;
-    flex: 2;
-}
-.contact p {
-    background-color: transparent;
-    margin: 0px;
-}
-.contact section #follow {
-    padding-bottom: 50px;
-    margin-top: 10px;
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        -webkit-box-flex: 2;
+        -webkit-flex: 2;
+        -ms-flex: 2;
+        flex: 2;
+        #follow {
+            margin-bottom: 1em;
+            margin-top: 1em;
+        }
+        #company_contact_name {
+            margin-bottom: 1em;
+        }
+        p {
+            margin: 0px;
+        }
+        i {
+            margin-bottom: 3em;
+            color: #ffffff;
+        }
+        a i:hover {
+            color: $orange_color;
+        }
+    }
 }
 
-/* Product image */
+/* ----- CONTACT END ----- */
 
-article figure img {
-    height: 50vh;
-}
 
 /* ----- FOOTER ----- */
 
 footer {
-    background-color: #111111;
+    background-color: #222222;
     width: 100vw;
     height: 45px;
     bottom: 0px;
@@ -569,23 +446,21 @@ footer {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-justify-content: space-around;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     z-index: 5;
+    p {
+        a {
+            color: #cccccc;
+        }
+        a:hover {
+            color: $orange_color;
+        }
+    }
 }
-footer i {
-    margin: 15px;
-    color: #ffffff;
-}
-footer a i:hover {
-    color: $dark_green_color;
-}
+
+/* ----- END FOOTER ----- */
+
 
 /* -------- Tablet ------ */
 
