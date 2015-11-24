@@ -131,7 +131,19 @@
             <div class="ref_holder">
                 <img src="images/about_us/employees/John_Watson_300x300.jpg" alt="employee">
                 <div class="overlay">
-                    <h1>Övriga renoveringar</h1>
+                    <h1>Övriga<br>renoveringar</h1>
+                </div>
+            </div>
+             <div class="ref_holder">
+                <img src="images/about_us/employees/John_Watson_300x300.jpg" alt="employee">
+                <div class="overlay">
+                    <h1>LOGGA</h1>
+                </div>
+            </div>
+            <div class="ref_holder">
+                <img src="images/about_us/employees/John_Watson_300x300.jpg" alt="employee">
+                <div class="overlay">
+                    <h1>GOD JUL</h1>
                 </div>
             </div>
         </div>
