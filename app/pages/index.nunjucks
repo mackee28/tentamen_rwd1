@@ -14,8 +14,8 @@
         <p>Vi utför allt inom byggnation och ventilation. Kontakta oss för en kostnadsfri offert redan idag!</p>
 
 
+        <div id="arrow_holder"><i class="fa fa-chevron-circle-down"></i></div>
 
-        <i class="fa fa-chevron-circle-down"></i>
 
 
     </article>
@@ -99,37 +99,37 @@
         <h2>REFERENSER</h2>
         <div class="ref_gallery">
             <div class="ref_holder">
-                <img src="images/about_us/employees/John_Watson_300x300.jpg" alt="employee">
+                <img src="images/reference/badrum/GOPR0287.jpg" alt="employee">
                 <div class="overlay">
                     <h1>Badrum</h1>
                 </div>
             </div>
             <div class="ref_holder">
-                <img src="images/about_us/employees/John_Watson_300x300.jpg" alt="employee">
+                <img src="images/reference/fonster/fonster_ref.jpg" alt="employee">
                 <div class="overlay">
                     <h1>Fönster</h1>
                 </div>
             </div>
             <div class="ref_holder">
-                <img src="images/about_us/employees/John_Watson_300x300.jpg" alt="employee">
+                <img src="images/reference/nyproduktion/takstolar.jpg" alt="employee">
                 <div class="overlay">
                     <h1>Nyproduktion</h1>
                 </div>
             </div>
             <div class="ref_holder">
-                <img src="images/about_us/employees/John_Watson_300x300.jpg" alt="employee">
+                <img src="images/reference/ventilation/vent_jonstorp.jpg" alt="employee">
                 <div class="overlay">
                     <h1>Ventilation</h1>
                 </div>
             </div>
             <div class="ref_holder">
-                <img src="images/about_us/employees/John_Watson_300x300.jpg" alt="employee">
+                <img src="images/reference/kok/kok_belysning.jpg" alt="employee">
                 <div class="overlay">
                     <h1>Kök</h1>
                 </div>
             </div>
             <div class="ref_holder">
-                <img src="images/about_us/employees/John_Watson_300x300.jpg" alt="employee">
+                <img src="images/reference/ovriga/tradack.jpg" alt="employee">
                 <div class="overlay">
                     <h1>Övriga<br>renoveringar</h1>
                 </div>
