@@ -1,16 +1,14 @@
-
-function tell(){
-//alert('test');
-    if(document.getElementById("preorlogin").innerHTML == "Logga in" || document.getElementById("preorlogin-mobile").innerHTML == "Logga in"){
-        document.getElementById("preorlogin").innerHTML = "Premium";
-        document.getElementById("preorlogin-mobile").innerHTML = "Premium";
-        document.getElementById("premium-banner-text").innerHTML = "2 för 1";
-    }else{
-        document.getElementById("preorlogin").innerHTML = "Logga in";
-        document.getElementById("preorlogin-mobile").innerHTML = "Logga in";
-        document.getElementById("premium-banner-text").innerHTML = "Premium";
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
     }
-    
-}
-
-
+  });
+});

@@ -57,6 +57,12 @@ h4 {
     margin-top: 0.5em;
     margin-bottom: 0em;
 }
+a{
+    color:$orange_color;
+}
+a:hover{
+    color:darken( $orange_color, 10%);
+}
 p {
     color: #ffffff;
     font-family: 'Open Sans', sans-serif;
@@ -353,6 +359,12 @@ p {
         h2 {
             color: $white_color;
             width: 100%;
+        }
+        a {
+            color:$white_color;
+        }
+        a:hover {
+            color: #cccccc;
         }
         section {
             display: flex;

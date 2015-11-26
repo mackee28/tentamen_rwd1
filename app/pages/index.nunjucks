@@ -7,6 +7,7 @@
 {% include "partials/navigation.nunjucks" %}
 
 <section id="home" class="container">
+    <a href="#home" id="link"></a>
     <!-- Welcome-->
     <article class="welcome" id="welcome_">
         <h2>- Bygg &amp; Vent i Syd AB  -</h2>
@@ -14,21 +15,21 @@
         <p>Vi utför allt inom byggnation och ventilation.<br> Kontakta oss för en kostnadsfri offert redan idag!</p>
 
 
-        <div id="arrow_holder" ><a href="#_about" id="link"><i class="fa fa-chevron-circle-down"></i></a></div>
+        <div id="arrow_holder" ><a href="#about" id="link"><i class="fa fa-chevron-circle-down"></i></a></div>
 
 
 
     </article>
     <!-- About us-->
     <article class="about" >
-        <a name="_about"a>
+        <a name="about"></a>
         <h2>Om oss</h2>
         <section class="about_des">
             <p>Bygg &amp; Vent I Syd AB är ett företag inom byggnation och ventilation, vi är ofta en totalentreprenad då vi utför allt som behövs till ditt projekt, Byggnation, ventilation, måleri, vvs, el-tjänster osv.. Vi tar gärna emot alla projekt stora som små och tar fram en bra och kostnadsfri lösning till kunden.</p>
 
             <p>Företaget bildades i April 2014 och växer kontunerligt framåt, vår utgångspunkt är från Åhus/Kristianstad men gör jobb över hela Skåne län. Vår huvudsak är att alltid jobba hårt och satsa på hög kvalitet på ditt projekt och såklart göra kunden nöjd! Företaget har en väldigt bredkunskap inom branschen. Vi gör renoveringar, nyproduktion, fastighetsskötsel och mycket mer.</p>
 
-            <p>Bygg &amp; Vent I Syd AB är återförsäljare till företaget Laganfönster. Vi säljer och monterar för extremt bra priser till en hög kvalité på fönster och montering. Vill ni veta mer om Laganfönster kan ni gå in på www.laganfonster.se eller kontakta oss.</p>
+            <p>Bygg &amp; Vent I Syd AB är återförsäljare till företaget Laganfönster. Vi säljer och monterar för extremt bra priser till en hög kvalité på fönster och montering. Vill ni veta mer om Laganfönster kan ni gå in på <a href="http://www.laganfonster.se" target="_blank">www.laganfonster.se</a> eller kontakta oss.</p>
 
             <p>Vi som företag kan erbjuda våra kunder en räntefri avbetalning via Wasa Kredit på kundens projekt, vilket som är lite unikt för ett mindre företag inom branschen och som kan hjälpa kunden till en bra lösning.</p>
 
@@ -43,6 +44,7 @@
     </article>
     <!-- Services -->
     <section class="services">
+       <a name="services"></a>
         <h2>Tjänster</h2>
 
         <section id="totalentrepenad">
@@ -78,7 +80,7 @@
         <section id="fonster">
             <img src="images/services/icons/white/window_white.svg" alt="test">
             <h4>Fönster</h4>
-            <p>Vi är återförsäljare till Laganfönster. Där vi kan erbjuda varje fönster skräddarsytt till just ert projekt. Välj vilken storlek du vill ha, välj färg och välj vilket material på fönstret som passar er bäst. Vi erbjuder Pvc-fönster, Trä-fönster och Trä/aluminum-fönster. Vi brukar rekommendera våra Pvc-fönster då de är väldigt bra priser till den höga kvalitén. Har du funderingar kring våra fönster gå in på www.laganfonster.se och läs mer. Eller ta kontakt med oss.</p>
+            <p>Vi är återförsäljare till Laganfönster. Där vi kan erbjuda varje fönster skräddarsytt till just ert projekt. Välj vilken storlek du vill ha, välj färg och välj vilket material på fönstret som passar er bäst. Vi erbjuder Pvc-fönster, Trä-fönster och Trä/aluminum-fönster. Vi brukar rekommendera våra Pvc-fönster då de är väldigt bra priser till den höga kvalitén. Har du funderingar kring våra fönster gå in på <a href="http://www.laganfonster.se" target="_blank">www.laganfonster.se</a> och läs mer. Eller ta kontakt med oss.</p>
         </section>
 
         <section id="mur_putsning">
@@ -153,11 +155,12 @@
     </section>
     <!-- Contact information -->
     <article id="contact" class="contact">
+       <a name="contact"></a>
         <h2 id="contactheading">KONTAKT</h2>
         <section>
             <!-- I will create phone and mail links-->
             <p id="company_contact_name">Bygg &amp; Vent i Syd AB </p>
-            <p>044 - 777 00 33 | byggisyd@gmail.com</p>
+            <p>044 - 777 00 33 | <a href="mailto:byggisyd@gmail.com?Subject=" target="_top">byggisyd@gmail.com</a></p>
             <p>Norra Piggagatan 5, 296 33 Åhus</p>
             <p id="follow">— Följ oss —</p>
             <a href="https://sv-se.facebook.com/" target="_blank"><i id="social" class="fa fa-facebook"></i></a>

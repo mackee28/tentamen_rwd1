@@ -8,30 +8,32 @@
     <!-- Off-canvas on mobile & tablet || sticky-menu on desktop  -->
     <div class="menu-holder">
         <ul class="menu_original">
-            <li>
-                <label id="menu-home" for="home" onclick=""><span>Hem</span></label>
+            <li><a href="#home" id="link">
+                <label id="menu-home" for="home" onclick=""><span>Hem</span></label></a>
             </li>
-            <li>
-                <label id="menu-about" for="about-us" onclick=""><span>Om oss</span></label>
+            <li><a href="#about" id="link">
+                <label id="menu-about" for="about-us" onclick=""><span>Om oss</span></label></a>
             </li>
-            <li>
-                <label id="menu-services" for="services" onclick=""><span>Tjänster</span></label>
+            <li><a href="#services" id="link">
+                <label id="menu-services" for="services" onclick=""><span>Tjänster</span></label></a>
             </li>
             <li>
                 <input id="sub-check-ref" type="checkbox" class="trigger-ref">
                 <label id="menu-references" for="sub-check-ref" onclick=""><i id="plus-ref" class="fa fa-plus"></i><i id="minus-ref" class="fa fa-minus"></i><span>Referenser</span></label>
                 <!-- Submenu for references  -->
                 <ul id="submenu-ref">
-                    <li><a href="references-badrum">Badrum</a></li>
-                    <li><a href="references-fonster">Fönster</a></li>
-                    <li><a href="references-nyproduktion">Nyproduktion</a></li>
-                    <li><a href="references-ventilation">Ventilation</a></li>
-                    <li><a href="references-kok">Kök</a></li>
-                    <li><a href="references-ovriga-renoveringar">Övriga renoveringar</a></li>
+                   <!-- Kommer att vara undersidor senare med struktur references-badrum osv. -->
+                    <li><a href="#references">Badrum</a></li>
+                    <li><a href="#references">Fönster</a></li>
+                    <li><a href="#references">Nyproduktion</a></li>
+                    <li><a href="#references">Ventilation</a></li>
+                    <li><a href="#references">Kök</a></li>
+                    <li><a href="#references">Övriga renoveringar</a></li>
                 </ul>
             </li>
-            <li>
+            <li><a href="#contact">
                 <label id="menu-contact" for="contact" onclick=""><span>Kontakt</span></label>
+                </a>
             </li>
         </ul>
     </div>
