@@ -87,10 +87,13 @@ gulp.task('prod', function(){
  var img=gulp.src('app/images/**/*.+(png|jpg|gif|svg)')
 .pipe(gulp.dest('dist/images'))
  
+ var font=gulp.src('app/fonts/*.otf')
+.pipe(gulp.dest('dist/fonts'))
+ 
  var js=gulp.src('app/js/*.js')
 .pipe(gulp.dest('dist/js'))
  
- return merge(html, css, img, js);
+ return merge(html, css, img, font, js);
 });
 
 // Creating a default task
