@@ -8,19 +8,20 @@
 
 <section id="home" class="container">
     <!-- Welcome-->
-    <article class="welcome">
+    <article class="welcome" id="welcome_">
         <h2>- Bygg &amp; Vent i Syd AB  -</h2>
         <a href="#welcome"></a>
-        <p>Vi utför allt inom byggnation och ventilation. Kontakta oss för en kostnadsfri offert redan idag!</p>
+        <p>Vi utför allt inom byggnation och ventilation.<br> Kontakta oss för en kostnadsfri offert redan idag!</p>
 
 
-        <div id="arrow_holder"><i class="fa fa-chevron-circle-down"></i></div>
+        <div id="arrow_holder" ><a href="#_about" id="link"><i class="fa fa-chevron-circle-down"></i></a></div>
 
 
 
     </article>
     <!-- About us-->
-    <article class="about">
+    <article class="about" >
+        <a name="_about"a>
         <h2>Om oss</h2>
         <section class="about_des">
             <p>Bygg &amp; Vent I Syd AB är ett företag inom byggnation och ventilation, vi är ofta en totalentreprenad då vi utför allt som behövs till ditt projekt, Byggnation, ventilation, måleri, vvs, el-tjänster osv.. Vi tar gärna emot alla projekt stora som små och tar fram en bra och kostnadsfri lösning till kunden.</p>
@@ -46,49 +47,49 @@
 
         <section id="totalentrepenad">
             <img src="images/services/icons/white/tools_white.svg" alt="test">
-            <h3>Totalentrepenad</h3>
+            <h4>Totalentrepenad</h4>
             <p>Vi utför totalentreprenad, håll kontakten med oss sedan sköter vi resten för att skapa ditt projekt. Vi har ett gott samarbete med många underentreprenörer med en hög tillit. Vi projekterar ert projekt från början till slut.</p>
         </section>
 
         <section id="ventilation">
             <img src="images/services/icons/white/vent_white.svg" alt="test">
-            <h3>Ventilation</h3>
+            <h4>Ventilation</h4>
             <p>Vi gör så att ni lever i en frisk miljö och får ett friskt hus. Vi utför både ventilation till boende och industri. Diskutera gärna med oss så tar vi fram tips och lösningar för att förbättra er ventilation.</p>
         </section>
 
         <section id="nyproduktion">
             <img src="images/services/icons/white/house_white.svg" alt="test">
-            <h3>Nyproduktion</h3>
+            <h4>Nyproduktion</h4>
             <p>Vi bygger ditt hus från grunden till nyckelfärdigt. Hjälper er med det ni behöver och kommer fram till en bra lösning genom ett bra samarbete. Vi bygger och har erfarenhet av sten-, trä- och frigolithus.</p>
         </section>
 
         <section id="badrum">
             <img src="images/services/icons/white/bath_white.svg" alt="test">
-            <h3>Badrum</h3>
+            <h4>Badrum</h4>
             <p>Vi monterar tätskikt till ditt badrum. Trycker kakel och klinker. Har ett bra samarbete med mattläggare. Vi bygger om stommen bakom ditt tätskikt till vad som är godkänt idag. Vi kan helt enkelt erbjuda det du behöver för att anpassa badrummet till exakt så som du vill ha det!</p>
         </section>
 
         <section id="maleri">
             <img src="images/services/icons/white/paintbrush_white.svg" alt="test">
-            <h3>Måleri</h3>
+            <h4>Måleri</h4>
             <p>Behöver ni fräscha upp ert hus lite är det lättaste alternativet att få in lite ny målarfärg i hemmet eller på fasaden. Målarfärg kan göra en stor skillnad i ert hem. Vi löser stora som små projekt. Kanske en ny tapet som fondvägg kan vara aktuellt då fixar vi det också.</p>
         </section>
 
         <section id="fonster">
             <img src="images/services/icons/white/window_white.svg" alt="test">
-            <h3>Fönster</h3>
+            <h4>Fönster</h4>
             <p>Vi är återförsäljare till Laganfönster. Där vi kan erbjuda varje fönster skräddarsytt till just ert projekt. Välj vilken storlek du vill ha, välj färg och välj vilket material på fönstret som passar er bäst. Vi erbjuder Pvc-fönster, Trä-fönster och Trä/aluminum-fönster. Vi brukar rekommendera våra Pvc-fönster då de är väldigt bra priser till den höga kvalitén. Har du funderingar kring våra fönster gå in på www.laganfonster.se och läs mer. Eller ta kontakt med oss.</p>
         </section>
 
         <section id="mur_putsning">
             <img src="images/services/icons/white/bricks_white.svg" alt="test">
-            <h3>Mur &amp; putsning</h3>
+            <h4>Mur &amp; putsning</h4>
             <p>Vi utför murning så som murning av lekablock, siporexblock och tegling. Behöver du hjälp med att putslaga eller till och med putsa hela din hus fasad så kan vi lösa detta.</p>
         </section>
 
        <section id="wasa_kredit">
             <img src="images/services/icons/white/card_white.svg" alt="test">
-            <h3>Wasa Kredit</h3>
+            <h4>Wasa Kredit</h4>
             <p>Vi har den unika chansen som ett litet företag i vår bransch erbjuda våra kunder räntefri avbetalning genom Wasa Kredit! Detta kan hjälpa er till att göra de där lilla extra i hemmet. Tillexempel byt alla dina fönster på en villa för ca 1500:- kr i månaden! För mer info kontakta oss.</p>
         </section>
     </section>
@@ -98,51 +99,52 @@
         <h2>REFERENSER</h2>
         <div class="ref_gallery">
             <div class="ref_holder">
-                <img src="images/reference/badrum/GOPR0287.jpg" alt="employee">
+                <img src="images/reference/badrum/GOPR0287.jpg" alt="Badrum">
                 <div class="overlay">
-                    <h1>Badrum</h1>
+                    <h3>Badrum</h3>
                 </div>
             </div>
             <div class="ref_holder">
-                <img src="images/reference/fonster/fonster_ref.jpg" alt="employee">
+                <img src="images/reference/fonster/fonster_ref.jpg" alt="Fönster">
                 <div class="overlay">
-                    <h1>Fönster</h1>
+                    <h3>Fönster</h3>
                 </div>
             </div>
             <div class="ref_holder">
-                <img src="images/reference/nyproduktion/takstolar.jpg" alt="employee">
+                <img src="images/logo_black_500x500.jpg" alt="Logga">
                 <div class="overlay">
-                    <h1>Nyproduktion</h1>
+                    <h3>Kontakta oss</h3>
                 </div>
             </div>
             <div class="ref_holder">
-                <img src="images/reference/ventilation/vent_jonstorp.jpg" alt="employee">
+                <img src="images/reference/nyproduktion/takstolar.jpg" alt="Takstolar">
                 <div class="overlay">
-                    <h1>Ventilation</h1>
+                    <h3>Nyproduktion</h3>
                 </div>
             </div>
             <div class="ref_holder">
-                <img src="images/reference/kok/kok_belysning.jpg" alt="employee">
+                <img src="images/reference/ventilation/vent_jonstorp.jpg" alt="Ventilation">
                 <div class="overlay">
-                    <h1>Kök</h1>
+                    <h3>Ventilation</h3>
+                </div>
+            </div>
+
+            <div class="ref_holder">
+                <img src="images/reference/kok/kok_belysning.jpg" alt="Kök">
+                <div class="overlay">
+                    <h3>Kök</h3>
                 </div>
             </div>
             <div class="ref_holder">
-                <img src="images/reference/ovriga/tradack.jpg" alt="employee">
+                <img src="images/reference/ovriga/tradack.jpg" alt="Trädäck">
                 <div class="overlay">
-                    <h1>Övriga<br>renoveringar</h1>
-                </div>
-            </div>
-             <div class="ref_holder">
-                <img src="images/about_us/employees/John_Watson_300x300.jpg" alt="employee">
-                <div class="overlay">
-                    <h1>LOGGA</h1>
+                    <h3>Övriga<br>renoveringar</h3>
                 </div>
             </div>
             <div class="ref_holder">
-                <img src="images/about_us/employees/John_Watson_300x300.jpg" alt="employee">
+                <img src="images/reference/ovriga/drill.jpg" alt="Borr">
                 <div class="overlay">
-                    <h1>GOD JUL</h1>
+                    <h3>10% rabatt för befintliga kunder</h3>
                 </div>
             </div>
         </div>

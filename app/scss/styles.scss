@@ -39,22 +39,28 @@ body {
         padding: 0;
     }
 }
-h1 {
-    color: #ffffff;
-    font-family: 'Revue Std Bold', sans-serif;
-    font-size: 7vw;
-}
 h2 {
     margin-top: 2.5em;
     color: #ffffff;
     font-family: 'Revue Std Bold', sans-serif;
-    font-size: 7vw;
+    font-size: 7vmin;
+}
+h3 {
+    color: #ffffff;
+    font-family: 'Revue Std Bold', sans-serif;
+    font-size: 6.5vmin;
+}
+h4 {
+    color: #ffffff;
+    font-family: 'Revue Std Bold', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 0.5em;
+    margin-bottom: 0em;
 }
 p {
     color: #ffffff;
     font-family: 'Open Sans', sans-serif;
 }
-
 // Logo //
 #logo_holder {
     left: 0;
@@ -73,8 +79,6 @@ p {
     #nav_logga {
         width: 7em;
         margin-top: 0.5em;
-
-
     }
 }
 
@@ -95,7 +99,6 @@ p {
     width: 100%;
     z-index: 100;
     background-color: transparent;
-
     /* Hide menu-checkbox */
     input.trigger {
         display: none;
@@ -135,8 +138,7 @@ p {
         margin: 0;
         cursor: pointer;
         line-height: 0em;
-        @include font-mix(#000000,
-        transparent);
+        @include font-mix(#000000, transparent);
         opacity: 0.97;
         /*background-color: $light_green_color;
         color: #ffffff;*/
@@ -176,11 +178,10 @@ p {
         transition: left 0.6s;
         opacity: 0.97;
         z-index: 600;
-        border-right:1px solid darken( $orange_color, 10%);
+        border-right: 1px solid darken( $orange_color, 10%);
         /* Dropshadow */
         //box-shadow: 5px 0px 5px 0px rgba(136, 136, 136, 0.5);
         ul {
-
             display: flex;
             flex-direction: column;
             align-content: center;
@@ -264,7 +265,6 @@ p {
         height: 100vh;
         h2 {
             background-color: rgba(0, 0, 0, 0.5);
-            border-radius: 1vh;
             padding: 2vh;
             justify-content: space-around;
         }
@@ -351,7 +351,7 @@ p {
         justify-content: center;
         flex-wrap: wrap;
         h2 {
-            color:$white_color;
+            color: $white_color;
             width: 100%;
         }
         section {
@@ -393,6 +393,12 @@ p {
                 height: auto;
                 position: relative;
                 overflow: hidden;
+                h1 {
+                    margin: 0;
+                    padding: 0;
+                    padding-left: 5%;
+                    padding-right: 5%;
+                }
                 .overlay {
                     content: "";
                     position: absolute;
@@ -503,12 +509,8 @@ footer {
 /* -------- Tablet ------ */
 
 @media screen and (min-width: 34em) {
-
-
-
-
     .container {
-         /* ABOUT */
+        /* ABOUT */
         .about {
             h2 {
                 color: #000000;
@@ -565,6 +567,11 @@ footer {
                     height: auto;
                     position: relative;
                     overflow: hidden;
+                    h3 {
+
+                            font-size: 3vmin;
+
+                    }
                     .overlay {
                         content: "";
                         position: absolute;
@@ -604,9 +611,6 @@ footer {
 /* ------- Desktop ------ */
 
 @media screen and (min-width: 64em) {
-
-
-
     #logo_holder {
         justify-content: flex-start;
         z-index: 200;
@@ -620,9 +624,6 @@ footer {
     }
     h2 {
         margin-top: 2em;
-        color: #ffffff;
-        font-family: 'Revue Std Bold', sans-serif;
-        font-size: 10vh;
     }
     /* NAVIGATION DESKTOP*/
     #nav {
@@ -673,7 +674,6 @@ footer {
                 flex-direction: row;
                 justify-content: center;
             }
-
             .menu_original {
                 bottom: 0;
                 display: flex;
@@ -687,7 +687,6 @@ footer {
                 i {
                     padding-right: 0.4em;
                 }
-
                 label {
                     font-size: 1.2em;
                     padding-left: 1.4em;
@@ -701,10 +700,9 @@ footer {
                     font-size: 1em;
                 }
                 // Hide the border of contact
-                #menu-contact{
+                #menu-contact {
                     border-right: 1px solid transparent;
                 }
-
                 label:hover {
                     color: darken( $orange_color, 10%);
                     background-color: transparent;
@@ -782,12 +780,12 @@ footer {
         }
         /* REFERENCES */
         .references {
-            h1 {
-                font-size: 4vw;
-            }
             .ref_gallery {
                 .ref_holder {
                     width: 25%;
+                    h3{
+                        font-size: 5vmin;
+                    }
                 }
             }
         }

@@ -29,10 +29,8 @@
   {% block content %} {% endblock %}
 
   </body>
-  <script type="text/javascript" src="js/hello_world.js"></script>
-  <!--
-  BUGS
-  * When displaying the menu on mobile/tablet and transforming the window, so that the desktop version triggers, the submenu will be displayd as a row insted of a column. Relod page to fix!
-  -->
+  <script type="text/javascript" src="js/functions.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
 </html>
 
